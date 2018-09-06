@@ -1,4 +1,3 @@
-const webpack = require("webpack");
 const path = require('path');
 
 const config = {
@@ -6,12 +5,12 @@ const config = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.js'
+    filename: 'app.js',
   },
   devServer: {
     contentBase: './dist',
     port: 3000,
-    inline: true
+    inline: true,
   },
   devtool: 'source-map',
   module: {
