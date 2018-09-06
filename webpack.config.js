@@ -20,7 +20,7 @@ const config = {
       exclude: path.resolve(__dirname, 'node_modules'),
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'env'],
+        presets: ['@babel/react', '@babel/env', '@babel/preset-flow'],
         plugins: ['transform-class-properties'],
       },
     },
