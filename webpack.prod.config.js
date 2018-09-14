@@ -6,12 +6,12 @@ const config = {
   entry: './src/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'app.js'
+    filename: 'app.js',
   },
   devServer: {
     contentBase: './dist',
-    port: 3000,
-    inline: true
+    inline: true,
+    open: true,
   },
   devtool: 'source-map',
   module: {
@@ -19,7 +19,7 @@ const config = {
       test: /\.jsx?$/,
       exclude: path.resolve(__dirname, 'node_modules'),
       loader: 'babel-loader',
-      query: {
+      options: {
         presets: ['react', 'env'],
         plugins: ['transform-class-properties'],
       },

@@ -1,7 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
+import MyComponent from './MyComponent';
 
 ReactDOM.render(
-  <h1>Hello5</h1>,
+  <MyComponent />,
   document.getElementById('root'),
 );
