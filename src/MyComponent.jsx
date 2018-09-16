@@ -15,17 +15,29 @@ class MyComponent extends React.Component<PropsType, StatesType> {
 
   clickHander = () => {
     const { count } = this.state;
-    this.setState({ count: count + 1 });
+    this.setState({ count: count * 10 });
   }
 
   render(): React.Node {
     const { count } = this.state;
     return (
       <React.Fragment>
-        <div>{count}</div>
+        <div
+          style={{
+            fontSize: 200,
+            textAlign: 'center',
+            color: 'red',
+          }}
+        >
+          {count}
+        </div>
         <button
           type="button"
           onClick={() => this.clickHander()}
+          style={{
+            display: 'block',
+            margin: '0 auto',
+          }}
         >
           BUTTON
         </button>
