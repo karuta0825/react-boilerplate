@@ -16,7 +16,7 @@ const config = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: 'dist/index.html',
+      template: 'src/index.html',
     }),
   ],
   devtool: 'source-map',
